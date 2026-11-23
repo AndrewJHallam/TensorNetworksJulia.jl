@@ -1,0 +1,53 @@
+name: Julia tests
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Julia ${{ matrix.julia }} / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            julia: '1.10'
+          - os: ubuntu-latest
+            julia: '1'
+          - os: macos-latest
+            julia: '1'
+          - os: windows-latest
+            julia: '1'
+    env:
+      JULIA_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Check upload file selection
+        if: runner.os == 'Linux'
+        run: |
+          python3 scripts/prepare_github.py --check
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+      - uses: julia-actions/setup-julia@v3
+        with:
+          version: ${{ matrix.julia }}
+      - name: Instantiate and test
+        shell: bash
+        run: >-
+          julia --project=. -e 'using Pkg; Pkg.instantiate();
+          Pkg.test(; julia_args=["--check-bounds=yes", "--depwarn=error"])'

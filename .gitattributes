@@ -1,0 +1,5 @@
+# Consistent source files across the CI platforms.
+* text=auto eol=lf
+
+# Scientific references retain the exact exported bytes, including whitespace.
+test/fixtures/** -text -whitespace

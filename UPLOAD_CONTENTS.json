@@ -1,0 +1,797 @@
+{
+  "package": "TensorNetworksJulia",
+  "license": "MIT",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 185,
+      "sha256": "a57fe015c44bccb7c821da9d73af5b30a7486f52dbee273e501af84cba35b63b"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "bytes": 113,
+      "sha256": "e49b0bad89c4caf2a07bb3fa625ff431977115a81a39b455061e96534be291a0"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 1319,
+      "sha256": "d2c254339a8cb7dec432bfdb13fe55a10c25b25034c949fd469e5193e44abdd9"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1160,
+      "sha256": "7cecd924abf68d8a4a6a34874d67f5853ea9b243caa64d24f4176ac06d15ccc2"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1292,
+      "sha256": "09a109b85f37cbc934118346c28e63b5ed6d3f6b2446c08c2917a38230fa8efb"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "2cb5488c25a1f92d8e4b16a30141127aec530987ccc70b1c421a648ba89a7d17"
+    },
+    {
+      "path": "Project.toml",
+      "bytes": 553,
+      "sha256": "d507c0fe7a1d517d365b9e18cc795d3ad18894156cad75505a03e4821596958d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5486,
+      "sha256": "04a7f01e45be70c098278f6e65938ee306793bcf7a727bf809beb999f407cbc9"
+    },
+    {
+      "path": "docs/CONTRACTION_AUDIT.md",
+      "bytes": 6547,
+      "sha256": "167c4738cc2c97140e1bf1737fb3d6850aad2ec424d9c482bf8a20478138dbe6"
+    },
+    {
+      "path": "docs/MATLAB_SOURCE_SHA256.txt",
+      "bytes": 5547,
+      "sha256": "091015f8d7a67a01b17dc7e11a69f0bae250aba05df2abde5b896b396df2a3e7"
+    },
+    {
+      "path": "docs/PORTING_PLAN.md",
+      "bytes": 10842,
+      "sha256": "ef5fb16cdad85d85c86ca379c4182110c15e6f62c64af1bdd9ea096893f704fc"
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "bytes": 3268,
+      "sha256": "4c3bebcc998f25ea3b5e339902e6ed2e3710af91f1eca4b53291477c6aa5e9fd"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 9078,
+      "sha256": "c75cf687203f3c2c388d38d65c0b650b83b7a0e8b0f292fa920f26e48852ffe8"
+    },
+    {
+      "path": "docs/VLASOV.md",
+      "bytes": 3409,
+      "sha256": "567bd725c1656c05f7d80fe2a7013ccb84593dab527587ed13303e8ba5204b0a"
+    },
+    {
+      "path": "examples/Output.jl",
+      "bytes": 531,
+      "sha256": "84711e1b51d909bc91e6dacb24d8bccfee9b430260d560e013d1635595a04079"
+    },
+    {
+      "path": "examples/finite_quench.jl",
+      "bytes": 2484,
+      "sha256": "bce08e0c668f2a7e9e41ab82f2bf81a97328c633b18b504c3910b5cbc9933ce0"
+    },
+    {
+      "path": "examples/infinite_quench.jl",
+      "bytes": 2171,
+      "sha256": "db0dd53c752e9448c35919b58ea62c123bb365345a8f7bb7b111803d08328003"
+    },
+    {
+      "path": "examples/staggered_unit_cell.jl",
+      "bytes": 1423,
+      "sha256": "b6c2cdd6d183730d881303f9589913e16ab3db93b1125c6c2b0c98850ff7e5fb"
+    },
+    {
+      "path": "examples/vlasov_scarfinder.jl",
+      "bytes": 2318,
+      "sha256": "dd23109d955df73cf0c0f98a63c60079e70b1113293f68178ac0187a58984cee"
+    },
+    {
+      "path": "packaging/VLASOV.md",
+      "bytes": 3409,
+      "sha256": "567bd725c1656c05f7d80fe2a7013ccb84593dab527587ed13303e8ba5204b0a"
+    },
+    {
+      "path": "packaging/upload.json",
+      "bytes": 1452,
+      "sha256": "7a91579f1fface6da011d884b66069995d117e8fcc075ca3263819184a190900"
+    },
+    {
+      "path": "scripts/prepare_github.py",
+      "bytes": 6408,
+      "sha256": "317dcc2fc09e4853c850d2a27be486604dacf99023f90cc88d34fc67a077030a"
+    },
+    {
+      "path": "scripts/test_prepare_github.py",
+      "bytes": 4286,
+      "sha256": "94edd63ec922532d1c6c2b6944c9d47f588d96548015abe43ca97587eb51b846"
+    },
+    {
+      "path": "src/Finite/Compression.jl",
+      "bytes": 7421,
+      "sha256": "22ac105fd86f89d9c0d8818ded173efd00dc9a7d603a3106fd5c99b84c164ae0"
+    },
+    {
+      "path": "src/Finite/DMRG.jl",
+      "bytes": 12876,
+      "sha256": "5ee72cfecfea261a8eac69fbb4b83464f32372141d7e9c3190e214b3b10a5a96"
+    },
+    {
+      "path": "src/Finite/MPO.jl",
+      "bytes": 6676,
+      "sha256": "73e9591e9fe89528698789e1610ea063f07b93296c85639c931c95ec300c9951"
+    },
+    {
+      "path": "src/Finite/Models.jl",
+      "bytes": 22223,
+      "sha256": "ad0eb5dd005c9ddfc1f24901afc62a6fd33d1a970b3e4f8b02eaa1a5bb39fe43"
+    },
+    {
+      "path": "src/Finite/Observables.jl",
+      "bytes": 12951,
+      "sha256": "f05f100e2e548684436a6059903212a4e2644f6db4be281000a3eb95570f76be"
+    },
+    {
+      "path": "src/Finite/State.jl",
+      "bytes": 6654,
+      "sha256": "939d2570685d067c072adac0be3d2c9fa704d3807c3bab156b3bacc3b1499790"
+    },
+    {
+      "path": "src/Finite/TDVP.jl",
+      "bytes": 13231,
+      "sha256": "a4177d8cd33412f896fac288ada212849205a7d0f59b293135f3bb2a243a4625"
+    },
+    {
+      "path": "src/Finite/TEBD.jl",
+      "bytes": 16199,
+      "sha256": "2c48265a9a71823215e340d3bc57938c7fe04af356b340fa22a0742626caaaeb"
+    },
+    {
+      "path": "src/Infinite/BondExpansion.jl",
+      "bytes": 11981,
+      "sha256": "c9a4351e63e245248f7891f0ff964d2fc93b776a6f840e30b675ac0f41ecbf97"
+    },
+    {
+      "path": "src/Infinite/LongRange.jl",
+      "bytes": 32636,
+      "sha256": "24e9659d93d00b5cc6584e4d4859de244cd71a1bf1bdec3f967dde22b7cc8bbd"
+    },
+    {
+      "path": "src/Infinite/MPO.jl",
+      "bytes": 30137,
+      "sha256": "93bc19d6623493a26446c57410f3eb5d3512a9d5092504c87333c3571ac5716b"
+    },
+    {
+      "path": "src/Infinite/NearestNeighbor.jl",
+      "bytes": 17682,
+      "sha256": "2a5fc22342dc2550082f7a5f5ae9642651283ea81d1a66197c9ffac8f0532d30"
+    },
+    {
+      "path": "src/Infinite/Observables.jl",
+      "bytes": 6778,
+      "sha256": "861acf27fc4fe5145ffa2589be1e39c3da050628496de93598dfdda08958eaaf"
+    },
+    {
+      "path": "src/Infinite/State.jl",
+      "bytes": 13776,
+      "sha256": "56454a74776d0df8014b5759c493ce5a99046f8bb3e39a2d39ebcc0d5047130e"
+    },
+    {
+      "path": "src/Infinite/UnitCell.jl",
+      "bytes": 3018,
+      "sha256": "53ee68c4d4050011ecb95c056828d1a944c93a8f9a329e2d11f89fe171830f0b"
+    },
+    {
+      "path": "src/PDE/PhaseSpace.jl",
+      "bytes": 6943,
+      "sha256": "68473ca0267a5be85f47f4d5f77f584a22b32acc71fcbda174a9688ff9d7664e"
+    },
+    {
+      "path": "src/PDE/SqrtVlasov.jl",
+      "bytes": 7209,
+      "sha256": "36146f8c36a4f60d9958a6f0ccbc6df1f927c0a74c2081c29d21d7729174549a"
+    },
+    {
+      "path": "src/PDE/Vlasov.jl",
+      "bytes": 10411,
+      "sha256": "71dd0b25bf569f72aa9b3e733569552368e2366dabb9668c1de5d263cc0159e3"
+    },
+    {
+      "path": "src/Shared/MPOActions.jl",
+      "bytes": 5681,
+      "sha256": "b81bd18466944e8867e1906a35893100a6fd70886e7b205392c5edd164aeb932"
+    },
+    {
+      "path": "src/Shared/MPSFactorizations.jl",
+      "bytes": 4367,
+      "sha256": "4d6cd78a198c8c7723c1ca4dd16fe0bb96db6ced11e56b71249136521023240a"
+    },
+    {
+      "path": "src/Shared/TensorUtilities.jl",
+      "bytes": 2482,
+      "sha256": "7ac36e88d39928f6d03d682e0b5b3f668126a91c1c669be94e8c8631bb2aa0f3"
+    },
+    {
+      "path": "src/TensorNetworksJulia.jl",
+      "bytes": 3523,
+      "sha256": "3ae60192419b5bea8ec4db6b4bf2cdf9f9c84b7256aa7933aac4c3cf3603497c"
+    },
+    {
+      "path": "test/Finite/AllocationTests.jl",
+      "bytes": 1402,
+      "sha256": "15505639208b62f48a1d415d4fd1b7efd07f16b9d3c0c4d0250cebd9b4d791cf"
+    },
+    {
+      "path": "test/Finite/CompressionTests.jl",
+      "bytes": 11980,
+      "sha256": "fe4c59e5f6400df58fdd4f64b8f7de8a6df99a882357a958a2355f2c797fd305"
+    },
+    {
+      "path": "test/Finite/CoreTests.jl",
+      "bytes": 10155,
+      "sha256": "27c23637a042014ce99467adac90a0958c13d0a7e828a6016eb4a8708f1ce666"
+    },
+    {
+      "path": "test/Finite/LongRangeMPOTests.jl",
+      "bytes": 2055,
+      "sha256": "82a401310da60831b674635834aea76755278d9fd4e92efe3b70f4c9c930dd10"
+    },
+    {
+      "path": "test/Finite/MPOBridgeTests.jl",
+      "bytes": 1823,
+      "sha256": "5134b86fad4e2ce28a9fab625360b7e3b327f92c325e77d2985373b651c4975e"
+    },
+    {
+      "path": "test/Finite/ModelTests.jl",
+      "bytes": 8682,
+      "sha256": "aa4950a409ae5b1e1876f73b9e23dd76b246351747686ab706525ecfaf2d4b95"
+    },
+    {
+      "path": "test/Finite/ObservableTests.jl",
+      "bytes": 9964,
+      "sha256": "e628f3477c4a1f16e64e5b9991c972f36d738876f0f1e3e70661bdbe029d88bc"
+    },
+    {
+      "path": "test/Finite/TDVPTests.jl",
+      "bytes": 5188,
+      "sha256": "24a12ba56918f30be59a88f5b71c74e8662b772af6ad0f39eb4dd0ab7a12843d"
+    },
+    {
+      "path": "test/Finite/TEBDTests.jl",
+      "bytes": 14449,
+      "sha256": "5fd209cd867e9d7a0e9905d2991849f595256d1881db55104bec0753fd47deb0"
+    },
+    {
+      "path": "test/Infinite/AllocationTests.jl",
+      "bytes": 923,
+      "sha256": "87eedaaf6b484f67ae236bd45b3556dfe85e3c2dc9b140e9ac18e0ca9c5b2a82"
+    },
+    {
+      "path": "test/Infinite/BondExpansionTests.jl",
+      "bytes": 5662,
+      "sha256": "0b6d7676d92c8ce17f5ec2f2bd60bca39d6e490dd586afe3dac720b203899416"
+    },
+    {
+      "path": "test/Infinite/LongRangeTests.jl",
+      "bytes": 9949,
+      "sha256": "ccb77838c54575b1d7d052a2ec07f76a5b41c2453938bf5ff4f028aa7c461077"
+    },
+    {
+      "path": "test/Infinite/MPOTests.jl",
+      "bytes": 11732,
+      "sha256": "ff7da8c2607e978e067435706e58725c1986ff6fc2f41efdbe306a90c98a9936"
+    },
+    {
+      "path": "test/Infinite/NearestNeighborTests.jl",
+      "bytes": 6867,
+      "sha256": "a10120515a98a8e55f277695cb7b9e1dfc9230cfbda1135235241306f44f5ab3"
+    },
+    {
+      "path": "test/Infinite/ObservableTests.jl",
+      "bytes": 3243,
+      "sha256": "10296afb0741bf3efa4b1d2df5460bcc0ad4e48c39fe64fff27df7ceb776c328"
+    },
+    {
+      "path": "test/Infinite/UnitCellTests.jl",
+      "bytes": 2255,
+      "sha256": "714c28c7b51ae82262cd7586121af2da035153e4218ea172ec28e4f3c3657641"
+    },
+    {
+      "path": "test/PDE/MatlabVlasovTests.jl",
+      "bytes": 1370,
+      "sha256": "cc9e9d2ea2c271d7cfcc2155fd08d10acb43e04410853fa8d4b141d55c98775d"
+    },
+    {
+      "path": "test/PDE/SqrtVlasovTests.jl",
+      "bytes": 3178,
+      "sha256": "ac4d93952d28684c7d46f662ed661d3f3d0098b053508e47dcfd9a547840ee0a"
+    },
+    {
+      "path": "test/PDE/VlasovTests.jl",
+      "bytes": 7507,
+      "sha256": "9feca41dca87047b8feabcf7714f32737647c0ac91fb46797e4f0955db0df940"
+    },
+    {
+      "path": "test/Shared/MPOActionTests.jl",
+      "bytes": 3006,
+      "sha256": "06209fb46dff32eac1bc10d2f2af235e3f06dee525964e1fa9601b01783d8dba"
+    },
+    {
+      "path": "test/Shared/MatlabParityTests.jl",
+      "bytes": 3637,
+      "sha256": "4f941f9b8df6be4b33ce1ce6c8af959716382a4aa63bbeb2fceef9f3b9207ef2"
+    },
+    {
+      "path": "test/Shared/TestHelpers.jl",
+      "bytes": 3399,
+      "sha256": "267afb90a217133cc7c2030a52883614266a5b1f84c99de7848acd29621056a8"
+    },
+    {
+      "path": "test/fixtures/matlab/dmrg1_energy.csv",
+      "bytes": 39,
+      "sha256": "2cd5569d13bfb268a320cfa073deb326c8489ed1f867b7e5dbc866814c63ea14"
+    },
+    {
+      "path": "test/fixtures/matlab/dmrg1_energy.shape",
+      "bytes": 4,
+      "sha256": "660d27866c015bac26537ee8c3f4d4bd0822c690b976244961d61951e88520fb"
+    },
+    {
+      "path": "test/fixtures/matlab/dmrg1_state.csv",
+      "bytes": 2456,
+      "sha256": "58f17081f752db99ab8fd813c0b5f4d0881a7f7bd42eef288ac1e43d108e4bbd"
+    },
+    {
+      "path": "test/fixtures/matlab/dmrg1_state.shape",
+      "bytes": 5,
+      "sha256": "95e28dbad83f35063446a428d127b3f0f4d78d0ef1641991929fbc20966d5a29"
+    },
+    {
+      "path": "test/fixtures/matlab/dmrg2_energy.csv",
+      "bytes": 39,
+      "sha256": "8ea601ba60e1bebd117658835a149286081c21e7bbefa0e3261e7ed3550d842f"
+    },
+    {
+      "path": "test/fixtures/matlab/dmrg2_energy.shape",
+      "bytes": 4,
+      "sha256": "660d27866c015bac26537ee8c3f4d4bd0822c690b976244961d61951e88520fb"
+    },
+    {
+      "path": "test/fixtures/matlab/dmrg2_state.csv",
+      "bytes": 2457,
+      "sha256": "6a802be84fb02c352a78bd02cbb02349d677224b27052695b49d1d73e9cb7c0e"
+    },
+    {
+      "path": "test/fixtures/matlab/dmrg2_state.shape",
+      "bytes": 5,
+      "sha256": "95e28dbad83f35063446a428d127b3f0f4d78d0ef1641991929fbc20966d5a29"
+    },
+    {
+      "path": "test/fixtures/matlab/energy.csv",
+      "bytes": 38,
+      "sha256": "f2e3a22d14d0b3029e90a9e3ee34aa7293e12ffb9ac8018cf45ddb68505ab5c7"
+    },
+    {
+      "path": "test/fixtures/matlab/energy.shape",
+      "bytes": 4,
+      "sha256": "660d27866c015bac26537ee8c3f4d4bd0822c690b976244961d61951e88520fb"
+    },
+    {
+      "path": "test/fixtures/matlab/heff3.csv",
+      "bytes": 923,
+      "sha256": "a092e6dd115ca0bfda1affcd67b771df9f28a0a0735f10bfe247827b6d60e05a"
+    },
+    {
+      "path": "test/fixtures/matlab/heff3.shape",
+      "bytes": 6,
+      "sha256": "cd82dea904ff74234823a0fbb3853a44c5de6a4e670a6d8a49cda1f91158ddba"
+    },
+    {
+      "path": "test/fixtures/matlab/heff34.csv",
+      "bytes": 1371,
+      "sha256": "0822df537dd2e17265a1e5c6ff4e269eb91cc1968d880efbcbc9ff926898aa82"
+    },
+    {
+      "path": "test/fixtures/matlab/heff34.shape",
+      "bytes": 8,
+      "sha256": "f372dfd28501d8f15bc6fd6c434d683af4315732c930028ec5b3810b1dd71268"
+    },
+    {
+      "path": "test/fixtures/matlab/left3.csv",
+      "bytes": 1643,
+      "sha256": "485a5ebdc4a6911b2564e34ad097fce2c2692fdd34ce76e502dbf374049e346b"
+    },
+    {
+      "path": "test/fixtures/matlab/left3.shape",
+      "bytes": 6,
+      "sha256": "f5331b8b9a4afc34004ff94645b4cd26178b7c3b83330166710db81c0858cff5"
+    },
+    {
+      "path": "test/fixtures/matlab/measure_y_transposed.csv",
+      "bytes": 201,
+      "sha256": "13caf9f8789e69fe067466eca715eb014c1a93588411a07486ec249c2469ab5d"
+    },
+    {
+      "path": "test/fixtures/matlab/measure_y_transposed.shape",
+      "bytes": 4,
+      "sha256": "92958282727d02b15c4d319c74f5f24cfb3d93184a7593074a8d1f6dfb9201df"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo1.csv",
+      "bytes": 71,
+      "sha256": "3cd76a6c840a2b4cb5cd46710f7a2473872d50ce35e5e75d09408f1301a5aa2a"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo1.shape",
+      "bytes": 8,
+      "sha256": "ed5fb9eb050fb9fd530dae71676571aacd46e903c6d28cfa6f0c9e87192083ed"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo2.csv",
+      "bytes": 167,
+      "sha256": "257f1381b98add95934feab30ed02c2318b409cb8abf983f16be2f50e9fb0185"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo2.shape",
+      "bytes": 8,
+      "sha256": "c93348f42f8f892e4df644b5530e1cdd07c0cb7cd6b52ff499c3a5b026246d0c"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo3.csv",
+      "bytes": 167,
+      "sha256": "257f1381b98add95934feab30ed02c2318b409cb8abf983f16be2f50e9fb0185"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo3.shape",
+      "bytes": 8,
+      "sha256": "c93348f42f8f892e4df644b5530e1cdd07c0cb7cd6b52ff499c3a5b026246d0c"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo4.csv",
+      "bytes": 167,
+      "sha256": "257f1381b98add95934feab30ed02c2318b409cb8abf983f16be2f50e9fb0185"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo4.shape",
+      "bytes": 8,
+      "sha256": "c93348f42f8f892e4df644b5530e1cdd07c0cb7cd6b52ff499c3a5b026246d0c"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo5.csv",
+      "bytes": 167,
+      "sha256": "257f1381b98add95934feab30ed02c2318b409cb8abf983f16be2f50e9fb0185"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo5.shape",
+      "bytes": 8,
+      "sha256": "c93348f42f8f892e4df644b5530e1cdd07c0cb7cd6b52ff499c3a5b026246d0c"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo6.csv",
+      "bytes": 61,
+      "sha256": "cddb3d171874ee1d3c58bc7894fd69047d8e315342a1d8251833b096f84db7fe"
+    },
+    {
+      "path": "test/fixtures/matlab/mpo6.shape",
+      "bytes": 6,
+      "sha256": "fb9697c6eb57cee96566ef593370ac81cd045876ae229821bf9ce65b48aa7b6d"
+    },
+    {
+      "path": "test/fixtures/matlab/provenance.txt",
+      "bytes": 110,
+      "sha256": "2681e99ebee4ca196f5cec7929b3d33606bd68e6f520ec1c42b7252e6b48bfbb"
+    },
+    {
+      "path": "test/fixtures/matlab/psi1.csv",
+      "bytes": 150,
+      "sha256": "a8dc5662288dc36ce1701fbb19626ab4097bfb37983573e9c3e4b61f1f205ea5"
+    },
+    {
+      "path": "test/fixtures/matlab/psi1.shape",
+      "bytes": 6,
+      "sha256": "efac2f91799570cc54e7d8044b465173481a29f7ac58073fe322227b922dfba3"
+    },
+    {
+      "path": "test/fixtures/matlab/psi2.csv",
+      "bytes": 467,
+      "sha256": "eff8ec6581577d690ebc2a2eecbcadfbb7940a8dc8373b91f5bd90d1f3306d64"
+    },
+    {
+      "path": "test/fixtures/matlab/psi2.shape",
+      "bytes": 6,
+      "sha256": "ce6efa2bfaffdb9d6feb9c8c72bcc1d4ddac1a251049fd2e7b4105dd4a9145c7"
+    },
+    {
+      "path": "test/fixtures/matlab/psi3.csv",
+      "bytes": 937,
+      "sha256": "4d0b663a887c1726147ad4442192a20e00285337180b685686a21b05fab552b0"
+    },
+    {
+      "path": "test/fixtures/matlab/psi3.shape",
+      "bytes": 6,
+      "sha256": "cd82dea904ff74234823a0fbb3853a44c5de6a4e670a6d8a49cda1f91158ddba"
+    },
+    {
+      "path": "test/fixtures/matlab/psi4.csv",
+      "bytes": 908,
+      "sha256": "7c64a904e3da6b31d2c5ad308ea6e98bec7a28611bf34cab3714b51d5846384c"
+    },
+    {
+      "path": "test/fixtures/matlab/psi4.shape",
+      "bytes": 6,
+      "sha256": "42204b792f729d1b628bd4b9d6d56ec524d2ece6d7aa72bc3eafe8f9cfcaf9f6"
+    },
+    {
+      "path": "test/fixtures/matlab/psi5.csv",
+      "bytes": 444,
+      "sha256": "24c0711ae7974c94a799aea5d5f5761a0aacbce1530ad85f0a1e041071999008"
+    },
+    {
+      "path": "test/fixtures/matlab/psi5.shape",
+      "bytes": 6,
+      "sha256": "a9d86f014519c294527c01b7ad3ba0601d16ac1f80071bae114be935ee56e747"
+    },
+    {
+      "path": "test/fixtures/matlab/psi6.csv",
+      "bytes": 150,
+      "sha256": "c8bfd2f40511332e6a198049ec9187e2324fab6a1fd761e5c296d96009626187"
+    },
+    {
+      "path": "test/fixtures/matlab/psi6.shape",
+      "bytes": 6,
+      "sha256": "11fcc94bbfe9b5ba1b470df60b8d2f0413867d0ec5d2b81f1f24bef9dc9ecd72"
+    },
+    {
+      "path": "test/fixtures/matlab/right3.csv",
+      "bytes": 1106,
+      "sha256": "a0d1b37e10d16ac00bb4ce17809cb6148e1d667c45f1669e0de56a8b798c74e3"
+    },
+    {
+      "path": "test/fixtures/matlab/right3.shape",
+      "bytes": 6,
+      "sha256": "ec43d830c368d4a0519af11a0ae03f2ef5a702bbe9c2c158a745becf2a85f367"
+    },
+    {
+      "path": "test/fixtures/matlab/tdvp1_state.csv",
+      "bytes": 2494,
+      "sha256": "9736093bd8d2e48963cd0ec3b9743800f211a7d018d675debf0bf53a98f3f6d3"
+    },
+    {
+      "path": "test/fixtures/matlab/tdvp1_state.shape",
+      "bytes": 5,
+      "sha256": "95e28dbad83f35063446a428d127b3f0f4d78d0ef1641991929fbc20966d5a29"
+    },
+    {
+      "path": "test/fixtures/matlab/tdvp2_state.csv",
+      "bytes": 2488,
+      "sha256": "6f5da26c146c5669c384d95359f6b7c448f4115b814e69eb3ee4978804e30658"
+    },
+    {
+      "path": "test/fixtures/matlab/tdvp2_state.shape",
+      "bytes": 5,
+      "sha256": "95e28dbad83f35063446a428d127b3f0f4d78d0ef1641991929fbc20966d5a29"
+    },
+    {
+      "path": "test/fixtures/matlab/uniform_input.csv",
+      "bytes": 369,
+      "sha256": "e497a5bb6e2d9c8f0bfeb6c2485ffa1b4e7af9c2f3032b22c9036ea029400517"
+    },
+    {
+      "path": "test/fixtures/matlab/uniform_input.shape",
+      "bytes": 6,
+      "sha256": "a6840410ff12bce7c5bddfccf17b1dcab846b70cc0552c272a83daa50cca8208"
+    },
+    {
+      "path": "test/fixtures/matlab/uniform_rho.csv",
+      "bytes": 82,
+      "sha256": "e88980250c523ba5f387f2ba3802f3b0a4e860ae9ae2e5dd131ae1ab9b46996b"
+    },
+    {
+      "path": "test/fixtures/matlab/uniform_rho.shape",
+      "bytes": 4,
+      "sha256": "ce79c67f0ea4301ab72a59650165e42c93c03749cac697d6b416e6bf6a9c923b"
+    },
+    {
+      "path": "test/fixtures/matlab/uniform_schmidt.csv",
+      "bytes": 61,
+      "sha256": "34be44b02a104b5755cda9ed05419402474280bb822d6ff21bff5f8538367307"
+    },
+    {
+      "path": "test/fixtures/matlab/uniform_schmidt.shape",
+      "bytes": 4,
+      "sha256": "f0d1431d3c47443a63c46beecf86e3c629676271e4e722dc5cd96355dd0f8faf"
+    },
+    {
+      "path": "test/fixtures/matlab/uniform_tdvp_rho.csv",
+      "bytes": 115,
+      "sha256": "3dcc8789c171913f92f6b24ed43a608ae7258d0a086afc03eb7309ccb46eca48"
+    },
+    {
+      "path": "test/fixtures/matlab/uniform_tdvp_rho.shape",
+      "bytes": 4,
+      "sha256": "ce79c67f0ea4301ab72a59650165e42c93c03749cac697d6b416e6bf6a9c923b"
+    },
+    {
+      "path": "test/fixtures/matlab/uniform_tdvp_schmidt.csv",
+      "bytes": 60,
+      "sha256": "1901652953cdd80d9b4f6fa5632b5843497b28c87933466b7ba6e975e01f5c3e"
+    },
+    {
+      "path": "test/fixtures/matlab/uniform_tdvp_schmidt.shape",
+      "bytes": 4,
+      "sha256": "f0d1431d3c47443a63c46beecf86e3c629676271e4e722dc5cd96355dd0f8faf"
+    },
+    {
+      "path": "test/fixtures/matlab/vumps_energy.csv",
+      "bytes": 20,
+      "sha256": "5174ff9f71865b2dbfbfa0adbcf3130f5493a56f8a2fddeb11aa368329d62fad"
+    },
+    {
+      "path": "test/fixtures/matlab/vumps_energy.shape",
+      "bytes": 4,
+      "sha256": "660d27866c015bac26537ee8c3f4d4bd0822c690b976244961d61951e88520fb"
+    },
+    {
+      "path": "test/fixtures/matlab/vumps_residual.csv",
+      "bytes": 20,
+      "sha256": "68495befd883fa59ce5ed93a0198f91cad171e84aac7c204cc0cedf998a2c3cc"
+    },
+    {
+      "path": "test/fixtures/matlab/vumps_residual.shape",
+      "bytes": 4,
+      "sha256": "660d27866c015bac26537ee8c3f4d4bd0822c690b976244961d61951e88520fb"
+    },
+    {
+      "path": "test/fixtures/matlab/vumps_rho.csv",
+      "bytes": 80,
+      "sha256": "c809098f8e899aaa1bd92fce6baa40825d00d2b561dfaec8e3e6f14c04c033c1"
+    },
+    {
+      "path": "test/fixtures/matlab/vumps_rho.shape",
+      "bytes": 4,
+      "sha256": "ce79c67f0ea4301ab72a59650165e42c93c03749cac697d6b416e6bf6a9c923b"
+    },
+    {
+      "path": "test/fixtures/matlab/vumps_schmidt.csv",
+      "bytes": 61,
+      "sha256": "b5e208359af24fb5d07b5502436f4ebdb0095a14313de3aad423685b0179ea7b"
+    },
+    {
+      "path": "test/fixtures/matlab/vumps_schmidt.shape",
+      "bytes": 4,
+      "sha256": "f0d1431d3c47443a63c46beecf86e3c629676271e4e722dc5cd96355dd0f8faf"
+    },
+    {
+      "path": "test/fixtures/vlasov_matlab/corrected_projection.csv",
+      "bytes": 3313,
+      "sha256": "68a7e3bafc3c244df30b8f04be169a2bbc4f5d53c4f6fd483a70951cf895a07a"
+    },
+    {
+      "path": "test/fixtures/vlasov_matlab/evolved.csv",
+      "bytes": 5112,
+      "sha256": "5b4026e5c897591880c5c6072834a4d8e6bd9609cab9fe5af31473d5b68688f1"
+    },
+    {
+      "path": "test/fixtures/vlasov_matlab/initial.csv",
+      "bytes": 5036,
+      "sha256": "57c52c7eec48cf5de13c5d837d3b77c291fb1e08cb5d230c2a41c52041784924"
+    },
+    {
+      "path": "test/fixtures/vlasov_matlab/provenance.txt",
+      "bytes": 417,
+      "sha256": "1829a7ed6ae05f7bae62506c1d512e0ba258fe31114eb5fdff717af5f5eba413"
+    },
+    {
+      "path": "test/fixtures/vlasov_matlab/raw_projection.csv",
+      "bytes": 5105,
+      "sha256": "d910aeca5782cbf137e5b7a94f53b63015e250804327d33ad303728643abfea9"
+    },
+    {
+      "path": "test/fixtures/vlasov_matlab/vlasov_matlab_reference.m",
+      "bytes": 7058,
+      "sha256": "55b0268d72b287018411184836968d0cb36e86e8727b0218d3e7c8c268d8674e"
+    },
+    {
+      "path": "test/runtests.jl",
+      "bytes": 903,
+      "sha256": "3288eb296fa60346ac63bd91709c595980e1fdc5f34ec8c2b8cb2faa2041d50f"
+    },
+    {
+      "path": "validation/accuracy.jl",
+      "bytes": 4863,
+      "sha256": "2da3bc375114d117a9817035975427594d419c8f87564700e3bd101326aae48f"
+    },
+    {
+      "path": "validation/allocations.jl",
+      "bytes": 2594,
+      "sha256": "4df096f512a7fbc432c5a4c350a6f6f3124e0bd07da0a3a54c903cdb724a0a39"
+    },
+    {
+      "path": "validation/benchmark.jl",
+      "bytes": 3378,
+      "sha256": "5c81701126535c431d625f95fd3f1b2bf0c438e4b3dad8bb2996bdd68b50e6ba"
+    },
+    {
+      "path": "validation/contraction_audit.jl",
+      "bytes": 3244,
+      "sha256": "da85f6a4b29a4d746000c415be8d27b98e2f5070a0e90a2fb9de3b621957cb6e"
+    },
+    {
+      "path": "validation/matlab/export_fixtures.m",
+      "bytes": 5088,
+      "sha256": "10d1df6b89980f0d662684b61ba3aecdd3c8b211afd35a9406999abcde03a6fd"
+    },
+    {
+      "path": "validation/matlab/export_vlasov_fixtures.m",
+      "bytes": 4427,
+      "sha256": "0c9dd00391c6e23186842e29413c6fb2618ae7673704b3bef2ddf21a9e99b5eb"
+    },
+    {
+      "path": "validation/results/allocations.csv",
+      "bytes": 231,
+      "sha256": "3da477d46a3ee20a86998302169f1c6bc8f4f4370721ccb07c17e474a6463aae"
+    },
+    {
+      "path": "validation/results/benchmarks.csv",
+      "bytes": 1301,
+      "sha256": "f1890adb3ab5f45b9afef0323ef7c05ca9c930ae8dd78475b76e18cd9bb29fa0"
+    },
+    {
+      "path": "validation/results/benchmarks_before_contraction_audit.csv",
+      "bytes": 1287,
+      "sha256": "2f05e52e3707c50a9865c720f7e8e2b5e42f49cdef17386a30de96fc3cbd7a22"
+    },
+    {
+      "path": "validation/results/benchmarks_before_env_fix.csv",
+      "bytes": 1304,
+      "sha256": "a5db3a4c94d49776f68e2fe60518de7665f9b41dbfeeed709883a0fd01760f51"
+    },
+    {
+      "path": "validation/results/contraction_audit.csv",
+      "bytes": 1918,
+      "sha256": "16172192d97d848d1683eecc585271a5f7dc38c4b242742571eafb79cadeb230"
+    },
+    {
+      "path": "validation/results/finite_bond.csv",
+      "bytes": 388,
+      "sha256": "a3a73d848926fc6a0cac0db030e6d2f1ebdfea02c8ad1b817341511d624f84e4"
+    },
+    {
+      "path": "validation/results/infinite_bond.csv",
+      "bytes": 488,
+      "sha256": "8afa58df8b25bd7fb33757ff0b8acd01c1f04dcef7ce9584952e4a239ccf5b41"
+    },
+    {
+      "path": "validation/results/machine.txt",
+      "bytes": 334,
+      "sha256": "422a2c4a6cc6b831aa4dff9440c412b7f88ff60aa25ec6b0a469c53086ae97d0"
+    },
+    {
+      "path": "validation/results/timestep.csv",
+      "bytes": 977,
+      "sha256": "1ea5d3446080f6222aab3155562beef714091702c6cdd4411d686a09ffb607ed"
+    },
+    {
+      "path": "validation/vlasov_baseline.jl",
+      "bytes": 7531,
+      "sha256": "96db86d8a2497a8d3106841b3046b521d911477a15d6272f5c019e60f080512a"
+    },
+    {
+      "path": "validation/vlasov_sqrt_benchmark.jl",
+      "bytes": 8160,
+      "sha256": "cca873714d018ea5a2228ec54ed4d9ded38a872dbc59b88b589f49f0093f9809"
+    }
+  ],
+  "note": "This manifest excludes itself; generated data and Git metadata are not exported."
+}

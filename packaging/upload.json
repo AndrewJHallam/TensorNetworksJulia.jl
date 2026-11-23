@@ -1,0 +1,26 @@
+{
+  "directories": ["src", "test"],
+  "files": [
+    "Project.toml", "README.md", "LICENSE", ".gitignore", ".gitattributes", "CONTRIBUTING.md",
+    ".github/workflows/ci.yml", ".github/dependabot.yml",
+    "packaging/upload.json", "packaging/VLASOV.md", "scripts/prepare_github.py",
+    "scripts/test_prepare_github.py",
+    "docs/PUBLISHING.md", "docs/PORTING_PLAN.md", "docs/VALIDATION.md",
+    "docs/CONTRACTION_AUDIT.md", "docs/MATLAB_SOURCE_SHA256.txt", "docs/VLASOV.md",
+    "examples/Output.jl", "examples/finite_quench.jl", "examples/infinite_quench.jl",
+    "examples/staggered_unit_cell.jl", "examples/vlasov_scarfinder.jl",
+    "validation/accuracy.jl", "validation/allocations.jl", "validation/benchmark.jl",
+    "validation/contraction_audit.jl", "validation/vlasov_baseline.jl",
+    "validation/vlasov_sqrt_benchmark.jl",
+    "validation/matlab/export_fixtures.m", "validation/matlab/export_vlasov_fixtures.m",
+    "validation/results/allocations.csv", "validation/results/benchmarks.csv",
+    "validation/results/benchmarks_before_contraction_audit.csv",
+    "validation/results/benchmarks_before_env_fix.csv",
+    "validation/results/contraction_audit.csv", "validation/results/finite_bond.csv",
+    "validation/results/infinite_bond.csv", "validation/results/timestep.csv",
+    "validation/results/machine.txt"
+  ],
+  "overrides": {"docs/VLASOV.md": "packaging/VLASOV.md"},
+  "max_file_bytes": 5242880,
+  "max_total_bytes": 10485760
+}

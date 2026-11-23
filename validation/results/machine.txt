@@ -1,0 +1,9 @@
+Julia: 1.13.0
+CPU: apple-m1
+Julia threads: 1
+BLAS threads: 1
+BLAS: LBTConfig([ILP64] libopenblas64_.0.3.30.dylib)
+Mode: standard
+Three samples per case, median elapsed seconds and allocated bytes.
+Includes copies of mutated states; excludes compilation/preparation.
+Timings are measurements, not numerical-convergence certifications.

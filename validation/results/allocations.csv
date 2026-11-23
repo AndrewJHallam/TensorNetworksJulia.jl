@@ -1,0 +1,7 @@
+bond_dimension,kernel,baseline_bytes,staged_bytes
+16,one_site,218928,219632
+16,two_site,534448,535184
+16,right_environment,52881072,231360
+32,one_site,726832,727536
+32,two_site,2107312,2108048
+32,right_environment,840586928,776128
